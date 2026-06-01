@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-premium-pearl text-premium-charcoal font-sans antialiased selection:bg-premium-nude selection:text-white;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass;
+  }
+  
+  .glass-dark {
+    @apply bg-premium-charcoal/80 backdrop-blur-md border border-white/10 shadow-glass text-white;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
